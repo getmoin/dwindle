@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-calendar {
+  @apply font-sans;
+}
+
+.custom-calendar .rdp-button:hover:not([disabled]) {
+  @apply bg-sky-100;
+}
+
+.custom-calendar .rdp-day_selected {
+  @apply bg-sky-500 text-white;
+}
+
+.custom-calendar .rdp-day_selected:hover {
+  @apply bg-sky-600;
+}
