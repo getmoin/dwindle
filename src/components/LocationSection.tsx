@@ -14,7 +14,7 @@ export function LocationSection({ address }: LocationSectionProps) {
   const mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.5978441004493!2d-75.7027851!3d45.4245293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0451a5bed41f%3A0x2007983353933798!2sParliament%20Hill!5e0!3m2!1sen!2sca!4v1625761234567!5m2!1sen!2sca";
   
   return (
-    <section className="bg-white rounded-lg shadow-md p-8">
+    <section className="bg-white rounded-lg p-8">
       <h2 className="text-3xl font-bold text-gray-900 mb-8">Visit Us</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>

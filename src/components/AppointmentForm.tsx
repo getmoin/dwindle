@@ -13,7 +13,7 @@ export function AppointmentForm({ selectedDate, availableTimeSlots, onSubmit }: 
   const { register, handleSubmit, formState: { errors } } = useForm<AppointmentFormData>();
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 bg-white p-6 rounded-lg shadow-md">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 bg-white p-6 rounded-lg">
       <h3 className="text-xl font-semibold mb-4">Book Appointment for {format(selectedDate, 'MMMM d, yyyy')}</h3>
       
       <div className="space-y-4">

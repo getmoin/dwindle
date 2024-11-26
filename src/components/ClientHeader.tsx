@@ -22,7 +22,7 @@ export function ClientHeader({ client }: ClientHeaderProps) {
           <img
             src={client.logo}
             alt={`${client.name} logo`}
-            className="h-20 w-20 rounded-full border-4 border-white shadow-lg"
+            className="h-20 w-20 rounded-full border-4 border-white"
           />
           <div>
             <h1 className="text-4xl font-bold text-white">{client.name}</h1>

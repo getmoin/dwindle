@@ -12,7 +12,7 @@ export function Calendar({ selectedDate, onSelect, availableDates }: CalendarPro
   const availableDatesAsDate = availableDates.map(date => new Date(date));
   
   return (
-    <div className="p-4 bg-white rounded-lg shadow-md">
+    <div className="p-4 bg-white rounded-lg">
       <DayPicker
         mode="single"
         selected={selectedDate}

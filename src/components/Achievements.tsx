@@ -9,13 +9,6 @@ const achievements = [
     icon: Clock
   },
   {
-    id: '2',
-    title: 'Mechanics',
-    value: '15',
-    description: 'Certified Experts',
-    icon: Users
-  },
-  {
     id: '3',
     title: 'Customers',
     value: '50K+',
@@ -48,7 +41,7 @@ const achievements = [
     title: 'Services',
     value: '20+',
     description: 'Types Offered',
-    icon: Users
+    icon: Award
   },
   {
     id: '8',
@@ -76,7 +69,7 @@ export function Achievements() {
           return (
             <div
               key={achievement.id}
-              className="text-center p-6 bg-white rounded-xl shadow-sm"
+              className="text-center p-6 bg-white rounded-xl"
             >
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-sky-100 text-sky-600 mb-4">
                 <Icon className="h-6 w-6" />

@@ -11,7 +11,7 @@ export function Reviews({ reviews }: ReviewsProps) {
       <h2 className="text-3xl font-bold text-gray-900 mb-8">Customer Reviews</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {reviews.map((review) => (
-          <div key={review.id} className="bg-white p-6 rounded-lg shadow-md">
+          <div key={review.id} className="bg-white p-6 rounded-lg">
             <div className="flex items-center mb-4">
               <img
                 src={review.avatar}

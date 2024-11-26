@@ -70,7 +70,7 @@ export function Services() {
         {services.map((service) => {
           const Icon = service.icon;
           return (
-            <div key={service.id} className="bg-white rounded-lg shadow-md p-6 flex items-start space-x-4">
+            <div key={service.id} className="bg-white rounded-lg p-6 flex items-start space-x-4">
               <div className="flex-shrink-0">
                 <div className="p-3 bg-sky-100 rounded-lg">
                   <Icon className="h-8 w-8 text-sky-600" />
