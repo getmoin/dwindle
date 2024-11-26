@@ -1,6 +1,5 @@
 import { MapPin, Phone, Mail } from 'lucide-react';
 import { fetchLocationData } from '../api/locationData';
-import type { Location } from '../types';
 import { useEffect, useState } from 'react';
 
 

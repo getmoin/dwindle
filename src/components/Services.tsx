@@ -1,9 +1,9 @@
 import { GaugeCircle, Wrench, Car, Battery, Cog, Fuel, Hammer, Sparkles } from 'lucide-react';
-import { Service } from '../types';
+// import { Service } from '../types';
 
-interface ServicesProps {
-  services: Service[];
-}
+// interface ServicesProps {
+//   services: Service[];
+// }
 
 const services = [
   {
