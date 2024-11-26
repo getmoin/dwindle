@@ -6,7 +6,7 @@ import { Services } from './components/Services';
 import { Achievements } from './components/Achievements';
 import { Reviews } from './components/Reviews';
 import { LocationSection } from './components/LocationSection';
-import { fetchClientData } from './api';
+import { fetchClientData } from './api/fetchClientData';
 import { Calendar } from './components/Calendar';
 import type { Client } from './types';
 

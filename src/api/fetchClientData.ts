@@ -1,5 +1,5 @@
 // FILE: api.ts
-import type { Client } from './types';
+import type { Client } from '../types';
 
 const API_BASE_URL = 'http://127.0.0.1:8000'; // Replace with your actual API endpoint
 
