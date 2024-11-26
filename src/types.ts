@@ -12,6 +12,13 @@ export interface Client {
     state: string;
     zip: string;
   };
+  phone: string;
+  email: string;
+  businessHours: {
+    MondayFriday: string;
+    Saturday: string;
+    Sunday: string;
+  };
   services: Service[];
   achievements: Achievement[];
   reviews: Review[];

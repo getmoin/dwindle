@@ -8,10 +8,17 @@ interface LocationSectionProps {
     city: string;
     state: string;
     zip: string;
-  };
+  },
+  phone: string;
+  email: string;
+  businessHours: {
+    MondayFriday: string;
+    Saturday: string;
+    Sunday: string;
+  }
 }
 
-export function LocationSection({ address }: LocationSectionProps) {
+export function LocationSection({ address, phone, email, businessHours }: LocationSectionProps) {
   // Using Parliament Hill, Ottawa as the sample location
   const [mapSrc, setMapSrc] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
@@ -62,10 +69,14 @@ export function LocationSection({ address }: LocationSectionProps) {
             </div>
             
             <div className="flex items-start">
-              <Phone className="w-6 h-6 text-sky-500 mt-1 mr-3" />
+              <div className="w-6 h-6 text-sky-500 mt-1 mr-3">
+                <Phone />
+              </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                <p className="text-gray-600">(613) 555-0123</p>
+                <p className="text-gray-600">
+                  {phone}
+                  </p>
               </div>
             </div>
             
@@ -73,7 +84,9 @@ export function LocationSection({ address }: LocationSectionProps) {
               <Mail className="w-6 h-6 text-sky-500 mt-1 mr-3" />
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                <p className="text-gray-600">contact@acmeauto.com</p>
+                <p className="text-gray-600">
+                  {email}
+                  </p>
               </div>
             </div>
           </div>
@@ -83,15 +96,21 @@ export function LocationSection({ address }: LocationSectionProps) {
             <div className="grid grid-cols-2 gap-2 text-sm">
               <div>
                 <p className="font-medium">Monday - Friday</p>
-                <p className="text-gray-600">8:00 AM - 6:00 PM</p>
+                <p className="text-gray-600">
+                  {businessHours.MondayFriday}
+                </p>
               </div>
               <div>
                 <p className="font-medium">Saturday</p>
-                <p className="text-gray-600">9:00 AM - 4:00 PM</p>
+                <p className="text-gray-600">
+                  {businessHours.Saturday}
+                </p>
               </div>
               <div>
                 <p className="font-medium">Sunday</p>
-                <p className="text-gray-600">Closed</p>
+                <p className="text-gray-600">
+                  {businessHours.Sunday}
+                </p>
               </div>
             </div>
           </div>

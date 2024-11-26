@@ -43,7 +43,7 @@ export function Services() {
         {services.map((services) => {
           const IconComponent = Icons[services.icon as unknown as keyof typeof Icons] as React.ElementType; 
           return (
-            <div key={services.id} className="bg-white rounded-lg shadow-lg p-6 flex items-start space-x-4">
+            <div key={services.id} className="bg-white rounded-lg shadow p-6 flex items-start space-x-4">
               <div className="flex-shrink-0">
                 <div className="p-3 bg-sky-100 rounded-lg">
                   <IconComponent className="h-8 w-8 text-sky-600" />

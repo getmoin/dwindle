@@ -14,7 +14,7 @@ export function ClientHeader({ client }: ClientHeaderProps) {
           alt={`${client.name} hero`}
           className="w-full h-64 object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-800/95" />
       </div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-12">
@@ -22,7 +22,7 @@ export function ClientHeader({ client }: ClientHeaderProps) {
           <img
             src={client.logo}
             alt={`${client.name} logo`}
-            className="h-20 w-20 rounded-full border-4 border-white"
+            className="h-20 w-20 rounded-full border-4 border-white shadow-lg"
           />
           <div>
             <h1 className="text-4xl font-bold text-white">{client.name}</h1>
