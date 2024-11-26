@@ -2,7 +2,6 @@ import { MapPin, Phone, Mail } from 'lucide-react';
 import { fetchLocationData } from '../api/locationData';
 import { useEffect, useState } from 'react';
 
-
 interface LocationSectionProps {
   address: {
     street: string;
