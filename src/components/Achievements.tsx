@@ -1,8 +1,7 @@
 // FILE: components/Achievements.tsx
 import React, { useEffect, useState } from 'react';
-import { fetchAchievementsData } from '../api/achievements';
+import { fetchAchievementsData } from '../api/achievementsData';
 import type { Achievement } from '../types';
-// import 'lucide-react';
 import * as Icons from 'lucide-react';
 
 const Achievements: React.FC = () => {

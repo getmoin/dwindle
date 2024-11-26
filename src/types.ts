@@ -24,6 +24,11 @@ export interface Service {
   image: string;
 }
 
+export interface Location {
+  id: string;
+  mapSrc: string;  
+}
+
 export interface Achievement {
   id: string;
   title: string;
